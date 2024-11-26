@@ -1,0 +1,12 @@
+<h1>Pizzeria</h1>
+
+<div class="container">
+  <!-- Component Lasta-Pizze -->
+  <app-lista-pizze
+    [listaPizze]="listaPizze"
+    (selectPizza)="onSelectPizza($event)"
+  ></app-lista-pizze>
+
+  <!-- Component Pizza -->
+  <app-pizza [pizza]="pizza"></app-pizza>
+</div>

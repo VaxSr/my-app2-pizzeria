@@ -1,0 +1,11 @@
+<h2>Le nostre pizze</h2>
+
+<ul>
+  @for (pizza of listaPizze; track $index) {
+  <li>
+    {{ pizza.nome }}
+
+    <button (click)="onSelectedPizza(pizza.id)">Vedi la pizza</button>
+  </li>
+  }
+</ul>

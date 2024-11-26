@@ -1,0 +1,10 @@
+<div class="pizza-container">
+  @if (pizza) {
+
+  <h3>Hai scelto: {{ pizza.nome }}</h3>
+
+  <img [src]="pizza.immagine" alt="" />
+  }@else {
+  <h3>Seleziona pizza</h3>
+  }
+</div>
